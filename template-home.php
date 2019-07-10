@@ -4,11 +4,7 @@
  */
 get_header();
 
-//$url = $_SERVER['REQUEST_URI'];
-//echo $postid = url_to_postid($url);
-if (!session_id())
-  session_start();
-
+// or Redux Framework
 $_SESSION['copyright_title'] = esc_html(get_field('copyright_title'));
 $_SESSION['copyright_author'] = esc_html(get_field('copyright_author'));
 $_SESSION['copyright_link'] = esc_html(get_field('copyright_link'));
